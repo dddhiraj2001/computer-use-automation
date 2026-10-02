@@ -1,0 +1,9 @@
+{
+  "runId": "tenant-4524f9c2-e6ae-45ec-93d5-c70f1dabbb1d",
+  "tenant": "northstar",
+  "artifactSha256": "31d81ff8c72f533f88b5f8dc421d5435d71860f2d1261a4a2c5e3150da17d623",
+  "modelUsed": false,
+  "status": "success",
+  "checkpointVerified": true,
+  "outputValuesOmitted": true
+}

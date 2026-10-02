@@ -1,0 +1,14 @@
+{
+  "callers": [{
+    "id": "local-demo",
+    "grants": [{ "tenant": "northstar", "capability": "member.read-savings-balance", "version": "1.0.0" }]
+  }, {
+    "id": "local-operator",
+    "grants": [
+      { "tenant": "northstar", "capability": "operations.reconcile", "version": "1.0.0" },
+      { "tenant": "northstar-handoff", "capability": "operations.reconcile", "version": "1.0.0" },
+      { "tenant": "northstar-expiry", "capability": "operations.reconcile", "version": "1.0.0" },
+      { "tenant": "cedar", "capability": "operations.reconcile", "version": "1.0.0" }
+    ]
+  }]
+}

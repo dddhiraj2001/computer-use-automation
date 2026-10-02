@@ -1,0 +1,9 @@
+{
+  "format": "verification-receipt-v1",
+  "runId": "release-3a717139-ba28-46f8-ae0b-fa22798b6cde",
+  "artifactPath": "evidence/artifacts/discovery-e4e4d137-255d-4366-89eb-853b6babd9f4.json",
+  "modelUsed": false,
+  "passed": false,
+  "status": "failure",
+  "code": "app_error"
+}

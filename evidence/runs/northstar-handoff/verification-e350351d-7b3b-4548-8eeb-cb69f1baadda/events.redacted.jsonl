@@ -1,0 +1,7 @@
+{"timestamp":"2026-09-29T19:19:38.523Z","phase":"intent","stepIndex":null,"code":"session_start"}
+{"timestamp":"2026-09-29T19:19:38.864Z","phase":"intent","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:19:38.920Z","phase":"completed","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:19:38.927Z","phase":"intent","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T19:19:38.946Z","phase":"completed","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T19:19:38.950Z","phase":"intent","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T19:19:39.030Z","phase":"result","stepIndex":2,"code":"operator_required"}

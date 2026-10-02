@@ -1,0 +1,15 @@
+{"timestamp":"2026-09-28T22:57:20.792Z","phase":"intent","stepIndex":null,"code":"session_start"}
+{"timestamp":"2026-09-28T22:57:21.763Z","phase":"intent","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-28T22:57:21.790Z","phase":"completed","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-28T22:57:21.823Z","phase":"intent","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-28T22:57:21.849Z","phase":"completed","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-28T22:57:21.861Z","phase":"intent","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-28T22:57:21.927Z","phase":"completed","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-28T22:57:21.948Z","phase":"intent","stepIndex":3,"code":"click"}
+{"timestamp":"2026-09-28T22:57:21.981Z","phase":"intent","stepIndex":3,"code":"intervention_requested"}
+{"timestamp":"2026-09-28T22:57:21.998Z","phase":"completed","stepIndex":3,"code":"control_human"}
+{"timestamp":"2026-09-28T22:58:18.652Z","phase":"completed","stepIndex":3,"code":"human_click"}
+{"timestamp":"2026-09-28T22:58:18.656Z","phase":"completed","stepIndex":3,"code":"human_submit"}
+{"timestamp":"2026-09-28T22:58:37.250Z","phase":"completed","stepIndex":3,"code":"control_resuming"}
+{"timestamp":"2026-09-28T22:58:37.291Z","phase":"completed","stepIndex":3,"code":"intervention_resolved"}
+{"timestamp":"2026-09-28T22:58:37.297Z","phase":"result","stepIndex":3,"code":"success"}

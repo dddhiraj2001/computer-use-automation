@@ -1,0 +1,10 @@
+{"timestamp":"2026-09-29T19:38:22.397Z","phase":"intent","stepIndex":null,"code":"session_start"}
+{"timestamp":"2026-09-29T19:38:22.765Z","phase":"intent","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:38:22.793Z","phase":"completed","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:38:22.834Z","phase":"intent","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T19:38:22.854Z","phase":"completed","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T19:38:22.859Z","phase":"intent","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T19:38:22.913Z","phase":"completed","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T19:38:22.931Z","phase":"intent","stepIndex":3,"code":"click"}
+{"timestamp":"2026-09-29T19:38:22.968Z","phase":"completed","stepIndex":3,"code":"click"}
+{"timestamp":"2026-09-29T19:38:22.987Z","phase":"result","stepIndex":3,"code":"success"}

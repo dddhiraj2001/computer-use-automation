@@ -1,0 +1,30 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+tmp/
+*.log
+
+# Local development notes (not part of the published project).
+/AGENTS.md
+/COVERAGE.md
+/CURRENT_AUDIT.md
+/DECISIONS.md
+/ENGINEERING.md
+/HARDENING_BACKLOG.md
+/PLAN.md
+/PROGRESS.md
+/RELEASE_CHECKS.md
+/REQUIREMENTS.md
+/STEERING.md
+/SUBMISSION_CHECKLIST.md
+
+# Runtime evidence may contain redacted samples only. Never commit raw sessions.
+evidence/private/
+evidence/artifacts/*.quarantined
+# Historical raw synthetic capture; retained locally, excluded from submission.
+evidence/runs/replay-89ed97e0-99da-4a87-872f-c8a2d492db85/failure.synthetic-demo.png

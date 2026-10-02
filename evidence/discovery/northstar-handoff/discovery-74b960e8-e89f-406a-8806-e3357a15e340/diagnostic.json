@@ -1,0 +1,648 @@
+{
+  "surface": "web",
+  "sessionOpen": true,
+  "controlCount": 5,
+  "snapshot": {
+    "format": "structural-dom-v1",
+    "truncated": false,
+    "nodes": [
+      {
+        "index": 0,
+        "parent": -1,
+        "tag": "body",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1728,
+          "height": 993
+        }
+      },
+      {
+        "index": 1,
+        "parent": 0,
+        "tag": "header",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1728,
+          "height": 88
+        }
+      },
+      {
+        "index": 2,
+        "parent": 1,
+        "tag": "a",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 38,
+          "y": 23,
+          "width": 135,
+          "height": 41
+        }
+      },
+      {
+        "index": 3,
+        "parent": 2,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 76,
+          "y": 23,
+          "width": 97,
+          "height": 41
+        }
+      },
+      {
+        "index": 4,
+        "parent": 3,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 76,
+          "y": 50,
+          "width": 97,
+          "height": 14
+        }
+      },
+      {
+        "index": 5,
+        "parent": 1,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 1489,
+          "y": 28,
+          "width": 201,
+          "height": 32
+        }
+      },
+      {
+        "index": 6,
+        "parent": 0,
+        "tag": "div",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 88,
+          "width": 1728,
+          "height": 856
+        }
+      },
+      {
+        "index": 7,
+        "parent": 6,
+        "tag": "nav",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 88,
+          "width": 224,
+          "height": 856
+        }
+      },
+      {
+        "index": 8,
+        "parent": 7,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 33,
+          "y": 122,
+          "width": 157,
+          "height": 12
+        }
+      },
+      {
+        "index": 9,
+        "parent": 7,
+        "tag": "a",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 18,
+          "y": 154,
+          "width": 187,
+          "height": 43
+        }
+      },
+      {
+        "index": 10,
+        "parent": 7,
+        "tag": "div",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 33,
+          "y": 251,
+          "width": 157,
+          "height": 41
+        }
+      },
+      {
+        "index": 11,
+        "parent": 10,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 115,
+          "y": 254,
+          "width": 0,
+          "height": 14
+        }
+      },
+      {
+        "index": 12,
+        "parent": 10,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 33,
+          "y": 276,
+          "width": 101,
+          "height": 12
+        }
+      },
+      {
+        "index": 13,
+        "parent": 6,
+        "tag": "main",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 224,
+          "y": 88,
+          "width": 1120,
+          "height": 856
+        }
+      },
+      {
+        "index": 14,
+        "parent": 13,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 328,
+          "y": 136,
+          "width": 913,
+          "height": 12
+        }
+      },
+      {
+        "index": 15,
+        "parent": 13,
+        "tag": "h1",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 328,
+          "y": 173,
+          "width": 913,
+          "height": 40
+        }
+      },
+      {
+        "index": 16,
+        "parent": 13,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 328,
+          "y": 227,
+          "width": 913,
+          "height": 24
+        }
+      },
+      {
+        "index": 17,
+        "parent": 13,
+        "tag": "section",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 328,
+          "y": 282,
+          "width": 913,
+          "height": 384
+        }
+      },
+      {
+        "index": 18,
+        "parent": 17,
+        "tag": "h2",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 311,
+          "width": 855,
+          "height": 20
+        }
+      },
+      {
+        "index": 19,
+        "parent": 17,
+        "tag": "form",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 354,
+          "width": 855,
+          "height": 94
+        }
+      },
+      {
+        "index": 20,
+        "parent": 19,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 354,
+          "width": 855,
+          "height": 15
+        }
+      },
+      {
+        "index": 21,
+        "parent": 19,
+        "tag": "div",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 379,
+          "width": 855,
+          "height": 43
+        }
+      },
+      {
+        "index": 22,
+        "parent": 21,
+        "tag": "input",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 379,
+          "width": 696,
+          "height": 43
+        }
+      },
+      {
+        "index": 23,
+        "parent": 21,
+        "tag": "button",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 1065,
+          "y": 379,
+          "width": 147,
+          "height": 43
+        }
+      },
+      {
+        "index": 24,
+        "parent": 19,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 434,
+          "width": 855,
+          "height": 14
+        }
+      },
+      {
+        "index": 25,
+        "parent": 17,
+        "tag": "section",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 476,
+          "width": 855,
+          "height": 162
+        }
+      },
+      {
+        "index": 26,
+        "parent": 25,
+        "tag": "h3",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 511,
+          "width": 855,
+          "height": 17
+        }
+      },
+      {
+        "index": 27,
+        "parent": 25,
+        "tag": "table",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 541,
+          "width": 855,
+          "height": 96
+        }
+      },
+      {
+        "index": 28,
+        "parent": 27,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 356,
+          "y": 588,
+          "width": 1,
+          "height": 1
+        }
+      },
+      {
+        "index": 29,
+        "parent": 27,
+        "tag": "thead",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 541,
+          "width": 855,
+          "height": 48
+        }
+      },
+      {
+        "index": 30,
+        "parent": 29,
+        "tag": "tr",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 541,
+          "width": 855,
+          "height": 48
+        }
+      },
+      {
+        "index": 31,
+        "parent": 30,
+        "tag": "th",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 541,
+          "width": 227,
+          "height": 48
+        }
+      },
+      {
+        "index": 32,
+        "parent": 30,
+        "tag": "th",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 584,
+          "y": 541,
+          "width": 368,
+          "height": 48
+        }
+      },
+      {
+        "index": 33,
+        "parent": 30,
+        "tag": "th",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 952,
+          "y": 541,
+          "width": 259,
+          "height": 48
+        }
+      },
+      {
+        "index": 34,
+        "parent": 27,
+        "tag": "tbody",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 589,
+          "width": 855,
+          "height": 48
+        }
+      },
+      {
+        "index": 35,
+        "parent": 34,
+        "tag": "tr",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 589,
+          "width": 855,
+          "height": 48
+        }
+      },
+      {
+        "index": 36,
+        "parent": 35,
+        "tag": "td",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 357,
+          "y": 589,
+          "width": 227,
+          "height": 48
+        }
+      },
+      {
+        "index": 37,
+        "parent": 35,
+        "tag": "td",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 584,
+          "y": 589,
+          "width": 368,
+          "height": 48
+        }
+      },
+      {
+        "index": 38,
+        "parent": 35,
+        "tag": "td",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 952,
+          "y": 589,
+          "width": 259,
+          "height": 48
+        }
+      },
+      {
+        "index": 39,
+        "parent": 38,
+        "tag": "a",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 962,
+          "y": 605,
+          "width": 82,
+          "height": 15
+        }
+      },
+      {
+        "index": 40,
+        "parent": 13,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 328,
+          "y": 692,
+          "width": 913,
+          "height": 52
+        }
+      },
+      {
+        "index": 41,
+        "parent": 40,
+        "tag": "h2",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 349,
+          "y": 696,
+          "width": 892,
+          "height": 14
+        }
+      },
+      {
+        "index": 42,
+        "parent": 40,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 349,
+          "y": 718,
+          "width": 892,
+          "height": 22
+        }
+      },
+      {
+        "index": 43,
+        "parent": 42,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 370,
+          "y": 720,
+          "width": 46,
+          "height": 18
+        }
+      },
+      {
+        "index": 44,
+        "parent": 42,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 423,
+          "y": 720,
+          "width": 46,
+          "height": 18
+        }
+      },
+      {
+        "index": 45,
+        "parent": 42,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 491,
+          "y": 720,
+          "width": 46,
+          "height": 18
+        }
+      },
+      {
+        "index": 46,
+        "parent": 42,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 570,
+          "y": 720,
+          "width": 46,
+          "height": 18
+        }
+      },
+      {
+        "index": 47,
+        "parent": 0,
+        "tag": "footer",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 944,
+          "width": 1728,
+          "height": 49
+        }
+      },
+      {
+        "index": 48,
+        "parent": 47,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 596,
+          "y": 963,
+          "width": 22,
+          "height": 12
+        }
+      }
+    ]
+  }
+}

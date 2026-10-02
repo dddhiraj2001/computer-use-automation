@@ -1,0 +1,9 @@
+{"timestamp":"2026-10-01T00:22:45.469Z","phase":"intent","stepIndex":0,"code":"discovery_entry"}
+{"timestamp":"2026-10-01T00:22:49.190Z","phase":"intent","stepIndex":1,"code":"model_type_search_input"}
+{"timestamp":"2026-10-01T00:22:49.220Z","phase":"completed","stepIndex":1,"code":"discovery_type"}
+{"timestamp":"2026-10-01T00:22:50.236Z","phase":"intent","stepIndex":2,"code":"model_click_submit_search"}
+{"timestamp":"2026-10-01T00:22:50.293Z","phase":"completed","stepIndex":2,"code":"discovery_click"}
+{"timestamp":"2026-10-01T00:22:51.337Z","phase":"intent","stepIndex":3,"code":"model_click_open_details"}
+{"timestamp":"2026-10-01T00:22:51.411Z","phase":"completed","stepIndex":3,"code":"discovery_click"}
+{"timestamp":"2026-10-01T00:22:52.592Z","phase":"intent","stepIndex":4,"code":"model_finish_read_balance"}
+{"timestamp":"2026-10-01T00:22:52.629Z","phase":"result","stepIndex":4,"code":"discovery_verified"}

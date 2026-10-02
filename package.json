@@ -1,0 +1,34 @@
+{
+  "name": "computer-use-automation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch src/demo/server.ts",
+    "catalog:demo": "tsx src/automation/catalog/demo.ts",
+    "runs:inspect": "tsx src/automation/catalog/ledger-cli.ts",
+    "runs:retention": "tsx src/automation/catalog/retention-cli.ts",
+    "runs:reconcile": "tsx src/automation/catalog/reconcile-cli.ts",
+    "tenants:verify": "tsx src/automation/verify-tenants.ts",
+    "replay": "tsx src/automation/replay/cli.ts",
+    "discover": "node --import tsx src/automation/discovery/cli.ts",
+    "build": "tsc",
+    "evidence:verify": "node --import tsx src/automation/verify-evidence.ts",
+    "start": "node dist/demo/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/automation/contracts/contracts.test.ts src/automation/replay/replay.test.ts src/automation/replay/runtime.test.ts src/automation/discovery/discovery.test.ts src/automation/catalog/catalog.test.ts",
+    "capability:validate": "tsx src/automation/contracts/validate.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "playwright": "^1.63.0",
+    "zod": "^3.25.76"
+  }
+}

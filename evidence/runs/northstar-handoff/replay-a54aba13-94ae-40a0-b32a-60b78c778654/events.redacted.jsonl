@@ -1,0 +1,8 @@
+{"timestamp":"2026-09-29T06:35:12.867Z","phase":"intent","stepIndex":null,"code":"session_start"}
+{"timestamp":"2026-09-29T06:35:13.247Z","phase":"intent","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T06:35:13.332Z","phase":"completed","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T06:35:13.377Z","phase":"intent","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T06:35:13.399Z","phase":"completed","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T06:35:13.403Z","phase":"intent","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T06:35:13.463Z","phase":"completed","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T06:35:18.527Z","phase":"result","stepIndex":2,"code":"checkpoint_failed"}

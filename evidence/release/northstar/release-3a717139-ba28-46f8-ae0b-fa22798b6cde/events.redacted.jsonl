@@ -1,0 +1,3 @@
+{"timestamp":"2026-09-29T19:36:48.812Z","phase":"intent","stepIndex":null,"code":"session_start"}
+{"timestamp":"2026-09-29T19:36:49.149Z","phase":"intent","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:36:49.234Z","phase":"result","stepIndex":0,"code":"app_error"}

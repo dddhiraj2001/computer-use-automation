@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "1.0",
+  "capability": {
+    "id": "member.read-savings-balance",
+    "version": "1.0.0",
+    "status": "draft",
+    "description": "Find a synthetic member and read their current savings balance."
+  },
+  "compatibility": {
+    "appFamily": "northstar-demo",
+    "appVersions": [
+      "0.1.0"
+    ],
+    "surface": "web",
+    "requiredFeatures": [
+      "structured_targets"
+    ]
+  },
+  "inputs": {
+    "memberId": {
+      "type": "string",
+      "description": "Five-digit synthetic member identifier.",
+      "sensitive": true,
+      "format": "member_id",
+      "maxLength": 5
+    }
+  },
+  "outputs": {
+    "balance": {
+      "type": "string",
+      "description": "Savings balance as a decimal string in USD.",
+      "sensitive": true,
+      "format": "decimal_money",
+      "maxLength": 30
+    }
+  },
+  "targets": {
+    "validationRejected": {
+      "description": "Known lookup validation outcome",
+      "robustness": "Exact reviewed application message",
+      "framePath": [],
+      "strategies": [{ "kind": "text", "text": "Lookup rejected by application validation.", "exact": true }]
+    },
+    "searchField": {
+      "description": "Member search input",
+      "robustness": "Exact visible label; refuse ambiguous matches.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "label",
+          "text": "Member ID",
+          "exact": true
+        }
+      ]
+    },
+    "searchButton": {
+      "description": "Submit member search",
+      "robustness": "Exact button role and name.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Search members",
+          "exact": true
+        }
+      ]
+    },
+    "viewAccount": {
+      "description": "Open matching account",
+      "robustness": "Search returns one member; exact link name must be unique.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "View account",
+          "exact": true
+        }
+      ]
+    },
+    "notFound": {
+      "description": "Known not-found message",
+      "robustness": "Exact visible business-outcome text.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "text",
+          "text": "Member not found. Check the member ID and try again.",
+          "exact": true
+        }
+      ]
+    },
+    "memberIdentity": {
+      "description": "Identity of selected member",
+      "robustness": "Scoped visible identity paragraph; verify invocation ID before extracting.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "css",
+          "selector": "main > p.intro"
+        }
+      ]
+    },
+    "balance": {
+      "description": "Savings balance value",
+      "robustness": "Table row anchored by its visible heading; avoids row-index dependence. CSS strategy is browser-specific.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "css",
+          "selector": "table tr:has(th:text-is(\"Current balance\")) td"
+        }
+      ]
+    }
+  },
+  "policy": {
+    "allowedRoutes": [
+      "/",
+      "/members",
+      "/members/:memberId"
+    ],
+    "allowedActions": [
+      "navigate",
+      "type",
+      "click"
+    ],
+    "maximumRisk": "reversible"
+  },
+  "steps": [
+    {
+      "id": "open-search",
+      "description": "open search",
+      "action": "navigate",
+      "risk": "read_only",
+      "timeoutMs": 5000,
+      "preconditions": [],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "searchField"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "path": "/"
+    },
+    {
+      "id": "enter-member-id",
+      "description": "enter member id",
+      "action": "type",
+      "risk": "reversible",
+      "timeoutMs": 5000,
+      "preconditions": [],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "searchButton"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "target": "searchField",
+      "input": "memberId"
+    },
+    {
+      "id": "search-member",
+      "description": "search member",
+      "action": "click",
+      "risk": "read_only",
+      "timeoutMs": 5000,
+      "preconditions": [],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "viewAccount"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "target": "searchButton"
+    },
+    {
+      "id": "open-account",
+      "description": "open account",
+      "action": "click",
+      "risk": "read_only",
+      "timeoutMs": 5000,
+      "preconditions": [],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "balance"
+        },
+        {
+          "kind": "text_contains_input",
+          "target": "memberIdentity",
+          "input": "memberId"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "target": "viewAccount"
+    }
+  ],
+  "outcomes": [
+    {
+      "code": "validation_rejected",
+      "description": "Application rejected this lookup; no automatic retry.",
+      "when": [{ "kind": "visible", "target": "validationRejected" }],
+      "afterSteps": ["search-member"]
+    },
+    {
+      "code": "member_not_found",
+      "description": "No matching member exists; this is a business result, not an execution error.",
+      "when": [
+        {
+          "kind": "visible",
+          "target": "notFound"
+        }
+      ],
+      "afterSteps": [
+        "search-member"
+      ]
+    }
+  ],
+  "checkpoint": [
+    {
+      "kind": "visible",
+      "target": "balance"
+    },
+    {
+      "kind": "text_contains_input",
+      "target": "memberIdentity",
+      "input": "memberId"
+    }
+  ],
+  "extract": [
+    {
+      "output": "balance",
+      "target": "balance",
+      "transform": "usd_money_to_decimal"
+    }
+  ],
+  "metadata": {
+    "source": "hand_authored",
+    "createdAt": "2026-09-28T00:00:00Z"
+  }
+}

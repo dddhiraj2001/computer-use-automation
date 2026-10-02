@@ -1,0 +1,13 @@
+{
+  "format": "verification-receipt-v1",
+  "runId": "release-4acde067-6e5e-4ffa-875f-c27b7fd54741",
+  "artifactPath": "evidence/artifacts/discovery-e4e4d137-255d-4366-89eb-853b6babd9f4.json",
+  "modelUsed": false,
+  "passed": true,
+  "status": "success",
+  "checkpointVerified": true,
+  "outputNames": [
+    "balance"
+  ],
+  "outputValuesOmitted": true
+}

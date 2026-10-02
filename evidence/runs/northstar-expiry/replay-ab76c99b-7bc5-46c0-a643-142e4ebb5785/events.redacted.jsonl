@@ -1,0 +1,15 @@
+{"timestamp":"2026-09-29T19:35:35.506Z","phase":"intent","stepIndex":null,"code":"session_start"}
+{"timestamp":"2026-09-29T19:35:36.392Z","phase":"intent","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:35:36.483Z","phase":"completed","stepIndex":0,"code":"navigate"}
+{"timestamp":"2026-09-29T19:35:36.504Z","phase":"intent","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T19:35:36.539Z","phase":"completed","stepIndex":1,"code":"type"}
+{"timestamp":"2026-09-29T19:35:36.553Z","phase":"intent","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T19:35:36.636Z","phase":"completed","stepIndex":2,"code":"click"}
+{"timestamp":"2026-09-29T19:35:36.649Z","phase":"intent","stepIndex":3,"code":"click"}
+{"timestamp":"2026-09-29T19:35:36.702Z","phase":"intent","stepIndex":3,"code":"intervention_requested"}
+{"timestamp":"2026-09-29T19:35:36.751Z","phase":"completed","stepIndex":3,"code":"control_human"}
+{"timestamp":"2026-09-29T19:35:38.873Z","phase":"completed","stepIndex":3,"code":"human_click","manualAction":{"tag":"button","controlType":"none","box":{"x":296,"y":391,"width":179,"height":39}}}
+{"timestamp":"2026-09-29T19:35:38.875Z","phase":"completed","stepIndex":3,"code":"human_submit","manualAction":{"tag":"form","controlType":"none","box":{"x":296,"y":391,"width":832,"height":39}}}
+{"timestamp":"2026-09-29T19:35:44.467Z","phase":"completed","stepIndex":3,"code":"control_resuming"}
+{"timestamp":"2026-09-29T19:35:44.503Z","phase":"completed","stepIndex":3,"code":"intervention_resolved"}
+{"timestamp":"2026-09-29T19:35:44.511Z","phase":"result","stepIndex":3,"code":"success"}

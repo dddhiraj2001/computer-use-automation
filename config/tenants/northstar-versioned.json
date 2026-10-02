@@ -1,0 +1,101 @@
+{
+  "id": "northstar-versioned",
+  "appFamily": "northstar-demo",
+  "appVersion": "0.1.0",
+  "versionSelector": "[data-app-version]",
+  "origin": "http://127.0.0.1:3000",
+  "routes": ["/", "/members", "/members/:memberId"],
+  "resourcePaths": ["/styles.css", "/favicon.ico", "/runtime.js"],
+  "actions": ["navigate", "type", "click", "wait"],
+  "maximumRisk": "reversible",
+  "reviewedControls": [
+    {
+      "target": {
+        "description": "Member lookup input",
+        "robustness": "Reviewed static application control; exact unique match required.",
+        "framePath": [],
+        "strategies": [
+          {
+            "kind": "label",
+            "text": "Member ID",
+            "exact": true
+          }
+        ]
+      },
+      "actions": [
+        "type"
+      ],
+      "minimumRisk": "reversible"
+    },
+    {
+      "target": {
+        "description": "Submit member lookup",
+        "robustness": "Reviewed static application control; exact unique match required.",
+        "framePath": [],
+        "strategies": [
+          {
+            "kind": "role",
+            "role": "button",
+            "name": "Search members",
+            "exact": true
+          }
+        ]
+      },
+      "actions": [
+        "click"
+      ],
+      "minimumRisk": "read_only"
+    },
+    {
+      "target": {
+        "description": "Open member account",
+        "robustness": "Reviewed static application control; exact unique match required.",
+        "framePath": [],
+        "strategies": [
+          {
+            "kind": "role",
+            "role": "link",
+            "name": "View account",
+            "exact": true
+          }
+        ]
+      },
+      "actions": [
+        "click"
+      ],
+      "minimumRisk": "read_only"
+    },
+    {
+      "target": {
+        "description": "Read savings balance",
+        "robustness": "Reviewed static application control; exact unique match required.",
+        "framePath": [],
+        "strategies": [
+          {
+            "kind": "css",
+            "selector": "table tr:has(th:text-is(\"Current balance\")) td"
+          }
+        ]
+      },
+      "actions": [],
+      "minimumRisk": "read_only"
+    },
+    {
+      "target": {
+        "description": "Verify member identity",
+        "robustness": "Reviewed static application control; exact unique match required.",
+        "framePath": [],
+        "strategies": [
+          {
+            "kind": "css",
+            "selector": "main > p.intro"
+          }
+        ]
+      },
+      "actions": [],
+      "minimumRisk": "read_only"
+    }
+  ],
+  "informationalAlerts": ["Demo informational notice"],
+  "targetOverrides": {}
+}

@@ -1,0 +1,11 @@
+{"timestamp":"2026-09-29T19:05:18.874Z","phase":"intent","stepIndex":0,"code":"discovery_entry"}
+{"timestamp":"2026-09-29T19:05:21.851Z","phase":"intent","stepIndex":1,"code":"model_type_search_input"}
+{"timestamp":"2026-09-29T19:05:21.884Z","phase":"completed","stepIndex":1,"code":"discovery_type"}
+{"timestamp":"2026-09-29T19:05:22.760Z","phase":"intent","stepIndex":2,"code":"model_click_submit_search"}
+{"timestamp":"2026-09-29T19:05:22.795Z","phase":"completed","stepIndex":2,"code":"discovery_click"}
+{"timestamp":"2026-09-29T19:05:24.085Z","phase":"intent","stepIndex":3,"code":"model_click_submit_search"}
+{"timestamp":"2026-09-29T19:05:24.151Z","phase":"completed","stepIndex":3,"code":"discovery_click"}
+{"timestamp":"2026-09-29T19:05:25.023Z","phase":"intent","stepIndex":4,"code":"model_click_open_details"}
+{"timestamp":"2026-09-29T19:05:25.119Z","phase":"completed","stepIndex":4,"code":"discovery_click"}
+{"timestamp":"2026-09-29T19:05:26.656Z","phase":"intent","stepIndex":5,"code":"model_finish_read_balance"}
+{"timestamp":"2026-09-29T19:05:26.679Z","phase":"result","stepIndex":5,"code":"discovery_verified"}

@@ -1,0 +1,24 @@
+{
+  "surface": "web",
+  "sessionOpen": true,
+  "controlCount": 0,
+  "snapshot": {
+    "format": "structural-dom-v1",
+    "truncated": false,
+    "nodes": [
+      {
+        "index": 0,
+        "parent": -1,
+        "tag": "body",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 8,
+          "y": 8,
+          "width": 1264,
+          "height": 704
+        }
+      }
+    ]
+  }
+}

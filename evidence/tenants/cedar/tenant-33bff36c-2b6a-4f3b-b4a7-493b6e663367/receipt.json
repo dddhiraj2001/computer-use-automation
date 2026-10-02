@@ -1,0 +1,9 @@
+{
+  "runId": "tenant-33bff36c-2b6a-4f3b-b4a7-493b6e663367",
+  "tenant": "cedar",
+  "artifactSha256": "31d81ff8c72f533f88b5f8dc421d5435d71860f2d1261a4a2c5e3150da17d623",
+  "modelUsed": false,
+  "status": "success",
+  "checkpointVerified": true,
+  "outputValuesOmitted": true
+}

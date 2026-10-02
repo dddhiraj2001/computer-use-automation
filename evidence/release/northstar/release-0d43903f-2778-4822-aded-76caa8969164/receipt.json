@@ -1,0 +1,9 @@
+{
+  "format": "verification-receipt-v1",
+  "runId": "release-0d43903f-2778-4822-aded-76caa8969164",
+  "artifactPath": "evidence/artifacts/discovery-e4e4d137-255d-4366-89eb-853b6babd9f4.json",
+  "modelUsed": false,
+  "passed": true,
+  "status": "business_outcome",
+  "code": "member_not_found"
+}

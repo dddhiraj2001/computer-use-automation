@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "1.0",
+  "capability": {
+    "id": "member.read-savings-balance",
+    "version": "1.0.0",
+    "description": "Read a synthetic member savings balance.",
+    "status": "draft"
+  },
+  "compatibility": {
+    "appFamily": "northstar-demo",
+    "appVersions": [
+      "0.1.0"
+    ],
+    "surface": "web",
+    "requiredFeatures": [
+      "structured_targets"
+    ]
+  },
+  "inputs": {
+    "memberId": {
+      "type": "string",
+      "description": "Member identifier",
+      "sensitive": true,
+      "format": "member_id",
+      "maxLength": 5
+    }
+  },
+  "outputs": {
+    "balance": {
+      "type": "string",
+      "description": "Savings balance in USD",
+      "sensitive": true,
+      "format": "decimal_money",
+      "maxLength": 30
+    }
+  },
+  "targets": {
+    "page": {
+      "description": "Main application area",
+      "robustness": "Unique main landmark",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "css",
+          "selector": "main"
+        }
+      ]
+    },
+    "target1": {
+      "description": "Observed UI control",
+      "robustness": "Visible label or table heading anchor; unique match required during execution.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "label",
+          "text": "Member ID",
+          "exact": true
+        }
+      ]
+    },
+    "target2": {
+      "description": "Observed UI control",
+      "robustness": "Visible label or table heading anchor; unique match required during execution.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "role",
+          "role": "button",
+          "name": "Search members",
+          "exact": true
+        }
+      ]
+    },
+    "target3": {
+      "description": "Observed UI control",
+      "robustness": "Visible label or table heading anchor; unique match required during execution.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "role",
+          "role": "link",
+          "name": "View account",
+          "exact": true
+        }
+      ]
+    },
+    "target4": {
+      "description": "Observed UI control",
+      "robustness": "Visible label or table heading anchor; unique match required during execution.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "css",
+          "selector": "table tr:has(th:text-is(\"Current balance\")) td"
+        }
+      ]
+    },
+    "memberIdentity": {
+      "description": "Observed UI control",
+      "robustness": "Visible label or table heading anchor; unique match required during execution.",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "css",
+          "selector": "main > p.intro"
+        }
+      ]
+    },
+    "notFound": {
+      "description": "Known demo business outcome",
+      "robustness": "Exact reviewed application message",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "text",
+          "text": "Member not found. Check the member ID and try again.",
+          "exact": true
+        }
+      ]
+    },
+    "validationRejected": {
+      "description": "Known demo validation outcome",
+      "robustness": "Exact reviewed application message",
+      "framePath": [],
+      "strategies": [
+        {
+          "kind": "text",
+          "text": "Lookup rejected by application validation.",
+          "exact": true
+        }
+      ]
+    }
+  },
+  "policy": {
+    "allowedRoutes": [
+      "/",
+      "/members",
+      "/members/:memberId"
+    ],
+    "allowedActions": [
+      "navigate",
+      "click",
+      "type"
+    ],
+    "maximumRisk": "reversible"
+  },
+  "steps": [
+    {
+      "id": "open",
+      "description": "Open entry page",
+      "risk": "read_only",
+      "timeoutMs": 5000,
+      "preconditions": [],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "target1"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "action": "navigate",
+      "path": "/"
+    },
+    {
+      "id": "step1",
+      "description": "Observed and executed discovery action",
+      "risk": "reversible",
+      "timeoutMs": 5000,
+      "preconditions": [
+        {
+          "kind": "visible",
+          "target": "target1"
+        }
+      ],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "target2"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "action": "type",
+      "target": "target1",
+      "input": "memberId"
+    },
+    {
+      "id": "step2",
+      "description": "Observed and executed discovery action",
+      "risk": "reversible",
+      "timeoutMs": 5000,
+      "preconditions": [
+        {
+          "kind": "visible",
+          "target": "target2"
+        }
+      ],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "target3"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "action": "click",
+      "target": "target2"
+    },
+    {
+      "id": "step3",
+      "description": "Observed and executed discovery action",
+      "risk": "reversible",
+      "timeoutMs": 5000,
+      "preconditions": [
+        {
+          "kind": "visible",
+          "target": "target3"
+        }
+      ],
+      "postconditions": [
+        {
+          "kind": "visible",
+          "target": "target4"
+        },
+        {
+          "kind": "text_contains_input",
+          "target": "memberIdentity",
+          "input": "memberId"
+        }
+      ],
+      "retry": {
+        "maxAttempts": 1,
+        "on": [],
+        "repeatSafe": false
+      },
+      "action": "click",
+      "target": "target3"
+    }
+  ],
+  "outcomes": [
+    {
+      "code": "member_not_found",
+      "description": "Known demo outcome supplied by the application contract",
+      "when": [
+        {
+          "kind": "visible",
+          "target": "notFound"
+        }
+      ],
+      "afterSteps": [
+        "step2",
+        "step3"
+      ]
+    },
+    {
+      "code": "validation_rejected",
+      "description": "Application rejected lookup; no automatic retry",
+      "when": [
+        {
+          "kind": "visible",
+          "target": "validationRejected"
+        }
+      ],
+      "afterSteps": [
+        "step2",
+        "step3"
+      ]
+    }
+  ],
+  "checkpoint": [
+    {
+      "kind": "visible",
+      "target": "target4"
+    },
+    {
+      "kind": "text_contains_input",
+      "target": "memberIdentity",
+      "input": "memberId"
+    }
+  ],
+  "extract": [
+    {
+      "output": "balance",
+      "target": "target4",
+      "transform": "usd_money_to_decimal"
+    }
+  ],
+  "metadata": {
+    "source": "llm_discovery",
+    "createdAt": "2026-10-01T00:22:52.629Z",
+    "discoveryRunId": "discovery-b82c6e1e-7136-475b-9174-c817c3e4c9d5"
+  }
+}

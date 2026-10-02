@@ -1,0 +1,310 @@
+{
+  "surface": "web",
+  "sessionOpen": true,
+  "controlCount": 5,
+  "snapshot": {
+    "format": "structural-dom-v1",
+    "truncated": false,
+    "nodes": [
+      {
+        "index": 0,
+        "parent": -1,
+        "tag": "body",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 717
+        }
+      },
+      {
+        "index": 1,
+        "parent": 0,
+        "tag": "header",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 88
+        }
+      },
+      {
+        "index": 2,
+        "parent": 1,
+        "tag": "a",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 38,
+          "y": 23,
+          "width": 135,
+          "height": 41
+        }
+      },
+      {
+        "index": 3,
+        "parent": 2,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 76,
+          "y": 23,
+          "width": 97,
+          "height": 41
+        }
+      },
+      {
+        "index": 4,
+        "parent": 3,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 76,
+          "y": 49,
+          "width": 97,
+          "height": 15
+        }
+      },
+      {
+        "index": 5,
+        "parent": 1,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 1041,
+          "y": 28,
+          "width": 201,
+          "height": 32
+        }
+      },
+      {
+        "index": 6,
+        "parent": 0,
+        "tag": "div",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 88,
+          "width": 1280,
+          "height": 580
+        }
+      },
+      {
+        "index": 7,
+        "parent": 6,
+        "tag": "nav",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 88,
+          "width": 224,
+          "height": 580
+        }
+      },
+      {
+        "index": 8,
+        "parent": 7,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 33,
+          "y": 122,
+          "width": 157,
+          "height": 12
+        }
+      },
+      {
+        "index": 9,
+        "parent": 7,
+        "tag": "a",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 18,
+          "y": 154,
+          "width": 187,
+          "height": 43
+        }
+      },
+      {
+        "index": 10,
+        "parent": 7,
+        "tag": "div",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 33,
+          "y": 252,
+          "width": 157,
+          "height": 41
+        }
+      },
+      {
+        "index": 11,
+        "parent": 10,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 115,
+          "y": 254,
+          "width": 0,
+          "height": 15
+        }
+      },
+      {
+        "index": 12,
+        "parent": 10,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 33,
+          "y": 276,
+          "width": 101,
+          "height": 12
+        }
+      },
+      {
+        "index": 13,
+        "parent": 6,
+        "tag": "main",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 224,
+          "y": 88,
+          "width": 1056,
+          "height": 580
+        }
+      },
+      {
+        "index": 14,
+        "parent": 13,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 301,
+          "y": 136,
+          "width": 902,
+          "height": 12
+        }
+      },
+      {
+        "index": 15,
+        "parent": 13,
+        "tag": "h1",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 301,
+          "y": 173,
+          "width": 902,
+          "height": 40
+        }
+      },
+      {
+        "index": 16,
+        "parent": 13,
+        "tag": "p",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 301,
+          "y": 229,
+          "width": 902,
+          "height": 18
+        }
+      },
+      {
+        "index": 17,
+        "parent": 13,
+        "tag": "form",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 301,
+          "y": 263,
+          "width": 902,
+          "height": 40
+        }
+      },
+      {
+        "index": 18,
+        "parent": 17,
+        "tag": "input",
+        "visible": false,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 19,
+        "parent": 17,
+        "tag": "input",
+        "visible": false,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 20,
+        "parent": 17,
+        "tag": "button",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 301,
+          "y": 263,
+          "width": 143,
+          "height": 40
+        }
+      },
+      {
+        "index": 21,
+        "parent": 0,
+        "tag": "footer",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 0,
+          "y": 668,
+          "width": 1280,
+          "height": 49
+        }
+      },
+      {
+        "index": 22,
+        "parent": 21,
+        "tag": "other",
+        "visible": true,
+        "disabled": false,
+        "box": {
+          "x": 596,
+          "y": 687,
+          "width": 22,
+          "height": 12
+        }
+      }
+    ]
+  }
+}

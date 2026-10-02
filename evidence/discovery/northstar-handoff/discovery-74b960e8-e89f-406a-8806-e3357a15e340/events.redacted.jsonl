@@ -1,0 +1,11 @@
+{"timestamp":"2026-09-29T19:08:32.657Z","phase":"intent","stepIndex":0,"code":"discovery_entry"}
+{"timestamp":"2026-09-29T19:08:35.189Z","phase":"intent","stepIndex":1,"code":"model_type_search_input"}
+{"timestamp":"2026-09-29T19:08:35.239Z","phase":"completed","stepIndex":1,"code":"discovery_type"}
+{"timestamp":"2026-09-29T19:08:36.356Z","phase":"intent","stepIndex":2,"code":"model_click_submit_search"}
+{"timestamp":"2026-09-29T19:08:36.429Z","phase":"intent","stepIndex":2,"code":"intervention_requested"}
+{"timestamp":"2026-09-29T19:08:36.446Z","phase":"completed","stepIndex":2,"code":"control_human"}
+{"timestamp":"2026-09-29T19:08:49.212Z","phase":"completed","stepIndex":2,"code":"human_click","manualAction":{"tag":"main","controlType":"none","box":{"x":224,"y":88,"width":976,"height":750}}}
+{"timestamp":"2026-09-29T19:12:36.293Z","phase":"completed","stepIndex":2,"code":"human_click","manualAction":{"tag":"main","controlType":"none","box":{"x":224,"y":88,"width":1120,"height":856}}}
+{"timestamp":"2026-09-29T19:12:40.881Z","phase":"completed","stepIndex":2,"code":"human_click","manualAction":{"tag":"button","controlType":"none","box":{"x":328,"y":264,"width":143,"height":39}}}
+{"timestamp":"2026-09-29T19:12:40.887Z","phase":"completed","stepIndex":2,"code":"human_submit","manualAction":{"tag":"form","controlType":"none","box":{"x":328,"y":264,"width":913,"height":39}}}
+{"timestamp":"2026-09-29T19:13:31.991Z","phase":"result","stepIndex":2,"code":"discovery_failed_timeout"}
