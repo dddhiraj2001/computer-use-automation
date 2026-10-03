@@ -6,6 +6,8 @@ Discovery uses an LLM to observe controls and choose the next action. The runner
 
 TypeScript provides shared types; Zod validates data entering the system. Playwright handles the browser behind SurfaceAdapter. The engines depend on small interfaces for the surface, evidence and operator, rather than on browser or filesystem details. CLI commands connect the parts. This keeps the system local and easy to run.
 
+I chose OpenAI's Responses API for schema-constrained decisions. The example configuration selects `gpt-4.1-mini-2025-04-14`: a small, dated model is a practical starting point for this narrow task, without claiming it outperforms alternatives. `OPENAI_MODEL` is configurable, and ModelAdapter isolates the provider. Each request includes the goal and current controls; the prompt treats page content as untrusted and requests one action, an input reference and an enumerated reason. The response schema limits target IDs to the current observation. Runtime validation and policy still check every proposal; structured output alone cannot make an action safe. Discovery has step/time limits, while replay needs no model access.
+
 # Artifact schema
 
 The artifact separates schema version, capability version and compatible app versions. It declares typed inputs/outputs, named targets, ordered steps, preconditions, postconditions, business outcomes and a final checkpoint. A type action refers to an input name such as memberId, not the recorded value.
